@@ -90,6 +90,7 @@ We'll need 2 things:
 - int, bytes, long, short - represent whole numbers, ex: 1, 3, 4
 - float, double - represent decimal numbers, ex: 3.0, 3.14, 9.001
 - boolean - true or false values
+- Read more about primitve types [here](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
 
 ## Operators
 - math operators -> +, -, *, /, %
