@@ -101,3 +101,52 @@ We'll need 2 things:
     - || - or
 - comparison:
     - == means we check if 2 values are the same
+
+## Scanner
+- a class that lets us read user input
+- first we have to create a scanner instance
+- then we can use the scanner to read data from the command line (Strings, int)
+
+## Flow Control
+- if, else if, else statements - let us control what happens based on different conditions
+    - we need exactly one if statement
+    - we can have 0 or more else if statemenets
+    - we can have 0 or 1 else statements
+    - in a single "group" of if statements, only one condition will trigger
+- for loops and while loops - run certain code a certain number of times or until a condition is met
+    - while loops
+    - for loops
+        - for(intiialization; condition; increment)
+    - Three main parts of a loop
+        - Initialization (int i = 0)
+        - condition (i < 100)
+        - increment (i ++)
+    - Key words for loops:
+        - break - immediately exit the current loop
+        - continue - skip the current step and move on to the next one
+- switch statement - similar to if, else if, else - check a single variable and run different code based on the value
+    - Once a single case is matched, every following case will also trigger
+    - Keep in mind we can achieve everything a switch statement does with if-statements, but it does clear up the syntax
+    - we can use primitve types and strings with switch statements
+
+## Classes and Objects
+- Classes are like the blueprint that we go off of in order to create objects
+    - Methods - like functions, actions that we can perform
+    - Variables - data about the object or class
+- Objects are the instances of that class
+    - created with the new keyword
+    - Each object can hold a different state (data)
+- Methods
+    - Return Type - what type of value the method returns (output)
+    - Paremeters - values that we pass in to the method (input)
+    - Body - what happens when the method is executed
+- Constructor
+    - A special type of method that lets us create an object
+    - Constructors ALWAYS have the same name as the class
+    - we can have multiple constructors for one class
+    - If we do not define any constructor in our class, Java will create the default constructor(no arguments) for us
+        - Once we create a constructor in our class, Java won't create a constructor for us anymore
+    - A default constructor (no arguments)
+    - A parameterized constructor is a constructor that takes in parameters (input)
+- "this" keyword
+    - indicates that we are referring to the current instance of an object
