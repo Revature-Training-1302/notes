@@ -150,3 +150,42 @@ We'll need 2 things:
     - A parameterized constructor is a constructor that takes in parameters (input)
 - "this" keyword
     - indicates that we are referring to the current instance of an object
+
+## The Object Class
+- Inheritance
+    - one of the 4 pillars of OOP
+    - parent-child information, child class pulls variables and methods from the parent
+- Every class is a descendant from the Object class
+    - meaning every class is going to have a certain set of methods that it has just because it inherits from the object class
+- The class is called "Object" and contains different methods that every class will inherit:
+- Methods:
+    - equals - determine if 2 objects are equal
+        - until we override the .equals method, it acts exactly like ==
+        - == check the memory address of the object (reference)
+        - So, if we create 2 different objects using the new keyword, == comparison will always return false
+        - However, if we override the .equals method, then we control how the objects are compared (by value)
+    - getClass - gets the runtime class
+    - hashcode - returns the hash value
+    - toString - converts an object to a string representation
+- [Documentation](https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html)
+
+## Constructor/Method Overloading
+- Overloading is when we have 2 methods of the same name but different parameters
+    - different number of parameters
+    - different types of parameters
+    - different order of parameters
+- The compiler will automatically know which one to pick based on the parameters
+
+## Annotations
+- begin with the @ symbol
+- used to decorate (put on top) methods, class, or variables
+- provide some extra information about what's going on
+- ex: @Override tells us that we are overriding a method
+
+## Hash Values
+- code/integer representation of an object
+- consistent hash function, where one object will only have 1 hash value 
+- same input to produce the same output
+- It is possible to have multiple inputs with the same output hash code
+    - example: "act" and "cat" could produce the same hash code if the hash function was as simple as adding up the characters
+
