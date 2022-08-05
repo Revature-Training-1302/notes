@@ -189,3 +189,32 @@ We'll need 2 things:
 - It is possible to have multiple inputs with the same output hash code
     - example: "act" and "cat" could produce the same hash code if the hash function was as simple as adding up the characters
 
+## Strings
+- https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
+- String pool
+    - We notice that in our programs, we can create strings using notation that is similar to primitives
+    - Even though, String is a class, we can instantiate it like a primitive
+    - We can create a string using the "new" keyword
+    - The difference is, it won't be created in the String pool
+### String Pool
+- To save memory, if we have 2 or more strings with the same value, the string will be created once in the string pool and the different variables will point to the same string
+- The exception to this rule is if we use the new keyword. In this case, the string will be created outside of the string pool and it will be a different memory location no matter what
+- Only one string pool, if we use the "new" keyword, the string will just be in heap memory
+- Strings are immutable (can't be changed) because of the String pool
+    - Lets say we have 100 strings that point to the same value in the String pool
+    - If strings were mutable, then that would affect all of the other references to that string
+
+![String Pool Diagram](https://www.javastring.net/wp-content/uploads/java-string-pool-1024x564.png)
+### Stack vs Heap
+- Stack and Heap are 2 different parts of memory
+- In the stack, we see primitive values and variable references
+- In the heap, we see object values ("fish"), new object
+
+## For Each
+- a shorter way to iterate through an array, or any sort of collection
+- syntax:
+```java
+for(Type counter : array) {
+    System.out.println(counter);
+}
+```
