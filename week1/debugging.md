@@ -1,0 +1,19 @@
+## Debugging
+- Reading Stack Trace
+    - If some exception occurs, you can read the console output to try to deduce what went wrong
+    - Gives line numbers and file names so you know exactly where to go
+- Print-Debugging
+    - A lot of steps in a program and the end result is incorrect
+    - You can use print statements along the way to identify what step of the program went wrong
+- Break-Points
+    - Set points in the program and to pause the execution and view different variables
+    - In IntelliJ you can click next to the line number to set a break point
+    - Then, you click Debug *.java and the program will start
+    - Pause at each breakpoint
+    - Help to eliminate debugging statements
+- Inspecting Code
+    - Following the logic and make sure it matches what you want to happen
+- Warnings are possible improvements to the code
+    - unused variables - either make sure you use it or get rid of it because it has no effect
+    - syntax - ex: switching from a regular for loop to an enhanced for loop
+    - Not detrimental to the program but still important because they can help us improve our code
