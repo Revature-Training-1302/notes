@@ -5,6 +5,18 @@
 4. Select the fields you want it to apply to (hold shift to select more than one)
 5. As always, make sure you know how to do it without the shortcut before you use the shortcut
 
+## Access Modifier
+- can be applied to methods, variables, classes
+- private - can only be directly accessed within that class
+    - classes can't be private
+    - can be indirectly access if we have public getters/setters
+- public - can be accessed anywhere in the entire project
+    - no matter what package/class we're in, we can access this
+- default (package) - this will apply if we don't specify the access
+    - we can access the method/variable if we are in the same package
+- protected - can access in the same package or any sub-class
+
+
 ## Non-Access Modifiers
 - static - if we use this keyword, it attaches the variable/method to the class rather than an instance
     - static methods can be called from the class or the object

@@ -49,3 +49,10 @@ A -> B -> C -> D -> ... Z would be fine as long as no class inherits multiple cl
 - Compile Time Polymorphism
 
 ![Polymorphism](https://miro.medium.com/max/886/1*RYd4K00FeQshQ_clT8ALuA.png)
+
+
+### Encapsulation
+- packaging everything about an object into one unit
+- data-hiding
+    - make our variables private
+    - public getter/setter methods
