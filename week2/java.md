@@ -53,3 +53,61 @@
 - Block Scope
 - In general, different scopes are denoted by {}
 - If we define something within a scope (or in a set of {}), then we can't use it outside that scope
+
+## Exceptions
+- unwanted or unexpected event that disrupt the normal flow of the program's instructions
+
+### Error VS Exception
+- An error is something we don't actually handle and usually don't have control over (Out of Memory, Stack Overflow)
+- An exception is something we can and should handle in our program. If we don't handle these exceptions, the program could stop running
+
+### Checked Exceptions
+- Checked at compile time
+- Examples: ClassNotFoundException, SocketException, SQLException, IOException, FileNotFoundException
+
+### Unchecked Exceptions
+- Runtime exception
+- Not checked at compile time
+- Examples: NullPointerException, ClassCastException, ArithmeticException, DateTimeException, ArrayStoreException
+
+![Exception Diagram](https://media.geeksforgeeks.org/wp-content/uploads/Exception-in-java1.png)
+
+
+### Handling Exception
+#### Catching
+- "Try" some potentially problematic code
+- "Catch" any potential exceptions that are thrown and perform some behavior accordingly
+    - In our catch block, we specify what exception we're handling
+    - It must either be the type of Exception that could be thrown or a superclass
+    - Ex: If we are encountering a FileNotFound Exception, we could catch FileNotFoundException, IOException, or the top-most Exception which is just Exception
+- "Finally" clause will run no matter what
+    - if we catch an exception or not
+#### Declaring that it will be Thrown
+- In the method declaration, we can declare that an exception will be thrown, therefore eliminating the need for a try-catch block
+    - Be careful because the exception could still arise
+- Only need to do one of these methods to make the program run
+
+#### Shortcuts in IntelliJ
+- Right-click -> Show Context Actions
+    - pick either surround with try/catch
+    - or Add exception to method signature
+
+#### Throw vs Throws
+- Throw is the action of making an exception happen
+    - ```java
+    throw new RuntimeException(e);
+    ```
+    means we are throwing a RuntimeException
+- Throws is a clause or a warning that the method will throw an exception
+    - ```java
+    public static void main(String[] args) throws FileNotFoundException
+    ```
+warns us that the main method might throw a FileNotFoundException
+
+### Exception Propogation
+- If we declare a method throws something and it's called in a different method, we have to ensure the outer method throws the same exception
+- If we use a try-catch block we don't have to propogate the exceptions
+
+### Custom Exception
+- we want to extend the Exception class
+- Set up a constructor that takes in a message and calls the parent-class constructor with that message
