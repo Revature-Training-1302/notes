@@ -29,8 +29,22 @@
     - If we want make it static, we add the keyword "static" before it
 - final - we can't change it
     - variables - we can't reassign the value
-    - methods
-    - classes
+        - We can change final objects by changing the fields but NOT reassinging
+        - ex: can't do
+        ```java
+        final Mammal dog = new Mammal("Scooby");
+        dog = new Mammal("Scrappy");
+        ```
+        - but we CAN do this:
+        ```java
+        final Mammal dog = new Mammal("Scooby");
+        dog.setName("Scrappy");
+        ```
+    - methods - if a method is final, we cannot override it
+    - classes - if a class is final, we cannot extend it
+- abstract keyword - means we don't fill out the body of the methods
+    - class - if you make the class abstract, this means you can have abstract methods within the class
+    - method - if you make a method abstract, that means you declare it but don't fill in the body
 
 
 ## Scope

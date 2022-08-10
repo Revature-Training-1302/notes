@@ -6,6 +6,7 @@
 - The child can expand on the functionality that's passed down
 - Open for extension, closed for modification
 - Animal -> Mammal -> Dog
+- https://stackoverflow.com/questions/7187799/why-default-constructor-is-required-in-a-parent-class-if-it-has-an-argument-ed-c
 
 #### Types of Inheritance
 - Single - One parent, one child
@@ -30,7 +31,7 @@ A -> B -> C -> D -> ... Z would be fine as long as no class inherits multiple cl
 ### Polymorphism
 - poly - many
 - morph - forms
-- Polymoprhism means many forms
+- Polymorphism means many forms
 
 #### Overriding - Inheritance
 - If have inheritance, we can override a method and change it's behavior
