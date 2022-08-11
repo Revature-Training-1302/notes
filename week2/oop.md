@@ -16,6 +16,10 @@
 - Hybrid (NOT ALLOWED IN JAVA) - combination of Multiple and Hierarchical
 - Rule of Thumb: One class cannot inherit multiple classes
 
+#### Exception to Multiple Inheritance Rule
+- We can achieve multiple inheritance if we use interfaces
+- One class can implement mulitple interfaces
+
 #### "super" keyword
 1. We can use it to call the constructor of the parent class. 
     - ex: super();
@@ -57,3 +61,31 @@ A -> B -> C -> D -> ... Z would be fine as long as no class inherits multiple cl
 - data-hiding
     - make our variables private
     - public getter/setter methods
+
+
+### Abstraction
+- Hiding away the implementation details of methods
+- We define the expected input/output/behavior, but we leave the details up to a different class
+- In Java, we can achieve abstraction in 2 different ways:
+    - Through the abstract class, abstract methods - partial abstraction
+        - In an abstract class you can have abstract and concrete methods
+        - In a regular java class, you cannot have abstract methods
+        - Cannot instantiate an abstract class
+        - If we extend an abstract class, we must fill in all of the methods or declare the class as abstract
+            - fulfill the contract
+            - must keep the method declaration the same
+                - with one exception, child method should be at least as open than the parent method
+        - In intelliJ, we can right-click class, generate, and implement methods automatically
+    - Interface - full/complete abstraction
+        - no concrete methods, meaning no methods that contain code
+- Common QC Question: What is the difference between an abstract class and an interface?
+    - the interface must be full abstraction
+    - abstract classes can have concrete methods
+    - class can implement multiple interfaces in Java
+
+#### Real-World Example
+- With databases, we need someway to connect and interact with them
+    - We will create an interface that defines the functionality of what we want to happen
+        - insert, read, delete
+        - If we want to define the behavior first, we couldn't use a concrete class because we don't necesarily know the impementation just yet
+    - We can implement the interface with 2 or more concrete classes and provide the same functionality with different implementations

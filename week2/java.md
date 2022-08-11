@@ -111,3 +111,42 @@ warns us that the main method might throw a FileNotFoundException
 ### Custom Exception
 - we want to extend the Exception class
 - Set up a constructor that takes in a message and calls the parent-class constructor with that message
+
+### Abstract Class and Interface
+- to create an abstract class, you just need to make a class and put the keyword abstract before the word "class"
+- To create an interface in intelliJ, we right-click the package, select new -> class, and then change it to interface
+#### Interface
+- when we "extend" a java interface we actually use the keyword "implements" instead of "extend"
+    - We can also achieve multiple inheritance, in other words we can implement multiple interfaces
+    - We cannot instantiate an interface
+
+
+### Static Keyword
+- Non-access modifier in Java
+- We use it to associate a method/variable with the class rather than an instance
+
+### Java Wrapper Classes
+- We have primitives, like int, byte, boolean, float, double
+- Wrapper classes provide a class to represent the primitives
+- int -> Integer
+- double -> Double
+- byte -> Byte
+- char -> Character
+- boolean -> Boolean
+- float -> Float
+- short -> Short
+- long -> Long
+
+### ArrayList
+- a Java class that can store many values
+```java
+import java.util.ArrayList;
+```
+- It's different than an array
+    - an ArrayList is dynamically sized
+    - with an array, once we declare it, we can't actually change the size
+    - ArrayList has a toString method that prints the content out in a nice manner
+- when we declare an ArrayList, we need to give it a class (can't put ina primitve type)
+    - This is where the importance of the Wrapper class shines through
+- .size() returns the size
+- .get(int index) returns the item at the index
