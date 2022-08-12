@@ -1,0 +1,30 @@
+12:23:06 From  Rory Eiffe (he/him)  to  Everyone:
+	I'll continue without audio, trying to make the notes as descriptive as possible. If we have questions, I can answer in the chat
+12:25:06 From  Rory Eiffe (he/him)  to  Everyone:
+	Again, I apologize for the tech difficulties, please put any questions in the chat
+12:26:10 From  Gavin Werner  to  Everyone:
+	would we want to create a separate interface for each method or would you normally put them all in one?
+12:26:35 From  iulia (Yulia) Kraiter - RE  to  Everyone:
+	Is the service layer the first layer?
+12:28:09 From  Rory Eiffe (he/him)  to  Everyone:
+	Good questions, I'll answer them in the notes
+12:33:22 From  Rory Eiffe (he/him)  to  Everyone:
+	I think that's a good overview of how this project will be structured. Any questions so far?
+12:33:33 From  Delightsome  to  Everyone:
+	if we have 2 entities of which one entity is linked to the second entity by a reference key, do we still need two interfaces or just one
+12:33:56 From  Rory Eiffe (he/him)  to  Everyone:
+	so by Reference key, are you referring to the SQL tables?
+12:34:03 From  Delightsome  to  Everyone:
+	yes
+12:34:22 From  Rory Eiffe (he/him)  to  Everyone:
+	Usually we'll have 2 interface for cases like that
+12:34:30 From  Delightsome  to  Everyone:
+	okay thanks
+12:34:35 From  Rory Eiffe (he/him)  to  Everyone:
+	Sometimes, if we're using Inheritance, we can have one interface
+12:34:53 From  Rory Eiffe (he/him)  to  Everyone:
+	I'll make sure to save the Zoom notes and post them on the notes repo
+12:36:25 From  Rory Eiffe (he/him)  to  Everyone:
+	We can close out the call now. I don't want to start the demo with my mic not working. In the meantime, take the next 25 minutes as self-study. And then lunch from 1-2 EST. Finally, we'll take some additional study time from 2:00 EST to 2:30 EST. By then I will be home and have a working mic!
+12:36:45 From  Rory Eiffe (he/him)  to  Everyone:
+	I will push up the notes in the mean time
