@@ -150,3 +150,5 @@ import java.util.ArrayList;
     - This is where the importance of the Wrapper class shines through
 - .size() returns the size
 - .get(int index) returns the item at the index
+
+### Stack vs Heap
