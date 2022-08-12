@@ -10,6 +10,7 @@ Keep in mind, this is not an exhaustive list. Be sure to look through the curric
 8. Describe the Java Compilation Process.
 9. Describe the JDK, JRE, and JVM.
 10. What are the primitve types in Java?
+11. What are the sizes of the different sizes of the primitive types?
 11. What are some different operators in Java?
 12. How do we read input from the console in Java?
 13. What is the Scanner class?

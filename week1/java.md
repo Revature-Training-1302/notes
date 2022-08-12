@@ -91,6 +91,7 @@ We'll need 2 things:
 - float, double - represent decimal numbers, ex: 3.0, 3.14, 9.001
 - boolean - true or false values
 - Read more about primitve types [here](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
+- https://www.w3schools.com/java/java_data_types.asp
 
 ## Operators
 - math operators -> +, -, *, /, %

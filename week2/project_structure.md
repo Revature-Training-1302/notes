@@ -22,7 +22,11 @@
     - In the case of our diagram, the controller layer would be close to the dotted line in the middle
 
 ### Order of Layers
-- Client Request -> Controller Layer -> Service Layer -> Data Layer -> Database
+- Client Request(Postman/Browser) -> Controller Layer -> Service Layer -> Data Layer -----JDBC-----> Database
+
+### Persistent storage vs Temporary Storage
+- In Java we have memory where we store our variables and data but once the program is over, that data is lost
+- With persistent storage (database), the data will be available always
 
 
 ### Entity
@@ -33,9 +37,14 @@
 - We use the entities at almost all, if not every layer
 - In Java, we will use Encapsulation with our entities
 
+### Exceptions
+- Exceptions can store your custom Exception classes
+- ex: RegisterException class that you can throw when something goes wrong with registering a user
+    - username already exists
+
 ### Some Patterns we see often
 - For each entity, we usually see a different controller, service, and data interface/class
-    - So for a project with two entities, we would see 2 controllers, 2 services, 1-2 data interfaces, and 2 data classes that implement the interface
+    - So for a project with two entities, we would see 2 controllers, 2 services, 1-2 data interfaces, and 2 data classes that implement the interface(s)
 - CRUD Operations - We will bring up this term a lot. It is a common theme in full-stack applications
     - Create
     - Read
