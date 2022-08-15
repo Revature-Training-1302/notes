@@ -41,6 +41,10 @@
 - Paste in the path to the bin folder
 - Make sure you close out of command prompt before trying again
 
+## Dbeaver
+- Dbeaver is the platform we will use to connect to and run commands to our database:
+- Go to this [link](https://dbeaver.io/download/) and select the Windows or Mac installer and follow the instructions
+
 
 
 
