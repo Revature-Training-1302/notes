@@ -43,7 +43,26 @@
 
 ## Dbeaver
 - Dbeaver is the platform we will use to connect to and run commands to our database:
+- It is not necessary to interact with the database, it's just a visual interface
+    - We can still interact with the database without DBeaver ( through the command prompt)
 - Go to this [link](https://dbeaver.io/download/) and select the Windows or Mac installer and follow the instructions
+- For components, you want Dbeaver Community and Include Java, 
+    - Associate .SQL files optional
+
+## Connect DBeaver to our Postgres server
+- In the navar, click on "Database"
+- select "New Database Connection"
+- select postgreSQL as our dialect
+- Click download to install drivers
+- Put in our info:
+    - for host, we can leave it as localhost
+    - port can also be left as 5432
+    - default database is postgres
+    - default username is postgres
+    - put in your password that you set up during the installation
+- Click on "Test Connection" to make sure we're able to connect
+- If the server ever stops running, use this link to restart it: https://tableplus.com/blog/2018/10/how-to-start-stop-restart-postgresql-server.html 
+
 
 
 
