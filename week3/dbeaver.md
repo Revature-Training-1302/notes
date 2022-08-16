@@ -17,3 +17,9 @@
 ## Scripts
 - scripts are stored on your computer, can be anywhere
 - when we run them in Dbeaver, it uses whatever database we're connected to
+
+## ERD Diagrams
+- Entity-Relationship Diagram
+- shows entities and the relations between them
+- In DBeaver, we can right-click on "tables" and select "View Diagram"
+- TODO< add picture>

@@ -100,7 +100,7 @@
     - Employee can belong to multiple departments
 
 ## Sub-languages
-1. Data Definition Language (DDL) - all about creating tables, setting up the structure
+1. Data Definition Language (DDL) - all about creating tables, setting up the structure, modifying the columns
     - create - create a table in SQL
         - can only create a table once, otherwise SQL will yell at you "Error relation already exists"
         - can check if the table exists
@@ -120,7 +120,10 @@
         ```
         - the "if exists" checks that the table exists before we try to drop it
     - truncate - completely wipe a table of it's data, keeps the table just without data
-2. Data Manipulation Language (DML) - all about the data in the table, modifying/manipulating
+    ```sql
+    truncate fruits;
+    ```
+2. Data Manipulation Language (DML) - all about the data in the table, modifying/manipulating the rows (not the columns)
     - insert - add new data to the table
         - we can specify the fields:
         ```sql
@@ -142,6 +145,34 @@
         delete from pets where id = 1;
         ```
     - Delete and Update commands without a where clause are dangerous, they will affect the entire table!!!
+3. Data Query Language (DQL) - all about reading data from our table
+    - select - selecting data from table
+        - General Structure: ```select <columns> from <table> where <condition>```
+        - specify which columns we want to view
+        - where condition to specify which rows we want to see
+        - the * indicates that we want every column:
+        ```sql
+        select * from person;
+
+        -- specify columns
+        select name, occupation from person;
+
+        -- specify rows:
+        select * from person where occupation = 'wizard';
+        ```
+    - "like" keyword, used to compare strings
+    - % sign is a catch-all delimiter
+    ```sql
+    select * from person where name like '%y';
+    ```
+
+## Truncate vs Delete vs Drop
+- truncate is going to wipe out a table completely
+- delete is going to delete records based on a condition
+    - if there is no condition, it acts the exact same way as truncate
+    - delete from fruits is the same as truncate fruits;
+- drop gets rid of the entire table
+
 
 
 
@@ -150,6 +181,16 @@
 - serial - like an integer, but it allows us to use the default keyword when inserting values to follow the sequence (incrementing by 1)
 - varchar - like a String in java, lets us store words, sentences
     - we have to declare the size (how many characters) when we make it, usually I use 50 as the default
+- date - store a date with year, month, day
+    ```sql
+    update person set bday = '1970-01-01';
+    ```
+    - we can use < to check if a data is earlier
+    - we can use > to check if a data is later
+- timestamp- store date with time
+```sql
+insert into work_times values ('2016-06-22 19:10:25-07');
+```
 - List of data types: https://www.geeksforgeeks.org/postgresql-data-types/ 
 
 ## Sequences
@@ -175,7 +216,22 @@
 - We usually use both for an id column
 
 #### Foreign Keys
-- to be continued...
+- foreign keys are used to connect 2 different tables
+- they help us to achieve multplicity relationships
+- we use the "references" keyword in SQL to set up a foreign key relationship
+    - ```references person``` would reference the primary key by default
+    - ```references person(age)``` would reference the age field
+```sql
+create table if not exists pet(id serial primary key, name varchar(50), owner_id integer references person(id));
+```
+- Foreign keys help to achieve referential integrity
+    - We can't reference a record that doesn't exist
+##### Referential Integrity
+- When an inserting/update a row that references another table, we want to make sure that reference actually exists
+    - trying to have a pet reference owner id 3, where there is no owner with id 3
+- When deleting/dropping records, we want to make sure no other records/tables rely on what we're deleting
+- By using foreign keys, the program will error if this happens
+- We can use the "cascade" keyword when deleting to delete all references to objects that are being deleted
 
 ### Default
 - we can assign a default value for a column by altering it
@@ -190,4 +246,8 @@ insert into food (id, name) values (1, default)
     - the default value is the next value in the sequence
 
 
-
+### Checks
+- when setting up our table we can set up conditions for which all records must pass before they are inserted into the table
+- 
+```sql
+create table if not exists person (id serial primary key, name varchar(50), occupation varchar(50), salary integer check (salary > 0));```
