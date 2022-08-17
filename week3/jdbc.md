@@ -73,3 +73,12 @@ create database pets
 -> {id, name, species}
 -> {id, name, species}
 ```
+
+## JDBC API
+- [Here](https://www.javatpoint.com/java-jdbc) is a good overview of the JDBC API
+- We learned about these interfaces/classes:
+    - Driver Manager
+    - Simple Statement
+    - Prepared Statement
+    - Connection
+    - ResultSet

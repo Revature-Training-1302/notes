@@ -250,4 +250,9 @@ insert into food (id, name) values (1, default)
 - when setting up our table we can set up conditions for which all records must pass before they are inserted into the table
 - 
 ```sql
-create table if not exists person (id serial primary key, name varchar(50), occupation varchar(50), salary integer check (salary > 0));```
+create table if not exists person (id serial primary key, name varchar(50), occupation varchar(50), salary integer check (salary > 0));
+```
+
+
+### Exercises
+- [Optional Exercises](https://www.w3schools.com/sql/exercise.asp)

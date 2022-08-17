@@ -69,3 +69,23 @@
     
 </project>
 ```
+
+## Issues with adding Maven to a pre-existing 
+- Normally we create Maven project to begin with
+- Sometimes the main folder can be recognized as a package, that's how we know there is a problem
+- To fix this:
+    - Create a new project
+    - File -> New -> Project
+        - On the sidebar, click on Maven Archetype
+        - Give it a name, pick a location, and an archetype
+        - We can use maven-archetype-quickstart, this is the default bare-bones template for a project
+        - Click Create, open in a new window
+    - Open both projects in your file browser
+    - In the broken project, navigate to the folder that holds all of your classes
+    - In the new project, go into src/main/java/org/example
+    - Copy the packages/classes from the broken project and paste them in
+    - In IntelliJ, head to the new project, we should see all the classes
+    - Now, the package declarations won't match the actual package structure
+        - Instead of changing the package declarations, it's probably easier to change the package names
+        - Right-click, refactor -> rename
+- Hopefully, this won't happen again because we will be creating the maven projects to begin with
