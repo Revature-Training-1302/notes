@@ -50,3 +50,26 @@ create database pets
 - Database -> New Database Connection, and fill out the new information, just make sure to change the database name
 - Whatever database we want to use, we set that as an active data source at the top of DBeaver
 - Set up whatever tables you need, make sure the fields match exactly
+
+## Set up our Driver
+- can go to mvnrepository.com
+- Search for postgresql
+- https://mvnrepository.com/artifact/org.postgresql/postgresql
+- Click on the latest version and add the dependency to the pom xml
+
+## SQL Injection
+- If we use string concatenation to create our SQL queries, then SQL Injection can occur
+- For example, if the user types in a command like delete from pet;, then that command could make its way into the database
+- Prepared statement
+
+## ResultSet
+- whenever we get return value from the database, we get a result set
+- like a pointer, initially pointing to an empty set
+- then we have to use resultSet.next() to increment
+- finally, we use the index to choose which value of the set we are dealing with:
+```
+-> empty
+     1    2        3
+-> {id, name, species}
+-> {id, name, species}
+```

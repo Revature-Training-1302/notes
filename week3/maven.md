@@ -29,3 +29,43 @@
 - dependencies - libraries that our project uses/depends on
 - Make sure to sync the POM file whenever we change it
     - In IntelliJ, there's a blue button that pops up when we change something in the POM, we just have to click that
+
+## Maven Central Repository
+- Website where you can search for maven dependencies
+- mvnrepository.com
+- we can search for dependencies and find the xml code that we can put right in our pom.xml file
+
+
+## Sample Maven POM:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>groupId</groupId>
+    <artifactId>Pet-Project</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+    <!-- We can write comments in here -->
+
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.4.1</version>
+        </dependency>
+
+
+    </dependencies>
+    
+</project>
+```
