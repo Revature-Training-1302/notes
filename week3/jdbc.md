@@ -82,3 +82,24 @@ create database pets
     - Prepared Statement
     - Connection
     - ResultSet
+- Common methods
+    - executeUpdate - used for inserts, updates and deletes (DML), return count for how many records updated
+    - getGeneratedKeys - after an insert, we use this method to get the generated id value, returns a result set ( used mostly for inserts)
+    - executeQuery - used for select, return the results of the query in a result set (DQL)
+
+    ![Result Set](https://cf.ppt-online.org/files/slide/n/nf5tsEiGLUZQ4Medu8lcXAgxpDT2F60SzK7Hr9/slide-5.jpg)
+
+
+## Multiple Entities
+- In general for each entity you will have:
+    - an entity class
+    - dao class
+    - controller class
+    - service class
+    - table in the database
+- We can usually just have 1 DaoFactory for the entire project
+
+
+## TODO - Find more resources explaining the structure of these projects
+- This [video](https://www.youtube.com/watch?v=ui01Li4vqDc) talks about DAO in context of an entire project. He also mentions the servlet layer which we don't need to worry about until week 4. 
+- 

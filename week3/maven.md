@@ -70,9 +70,9 @@
 </project>
 ```
 
-## Issues with adding Maven to a pre-existing 
+## Issues with adding Maven to a pre-existing project
 - Normally we create Maven project to begin with
-- Sometimes the main folder can be recognized as a package, that's how we know there is a problem
+- Sometimes the main folder gets recognized as a package, that's how we know there is a problem
 - To fix this:
     - Create a new project
     - File -> New -> Project
