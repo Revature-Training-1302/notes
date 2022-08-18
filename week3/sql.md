@@ -165,6 +165,74 @@
     ```sql
     select * from person where name like '%y';
     ```
+    - order by column, order the results in numerical or alphabetical order based on the data type of the column
+        - if we specify multiple columns, the additional columns will be used to break ties
+        - we can specify asc for ascending or desc for descending, but the default will be ascending if you don't specify
+    ```sql
+    select * from person order by salary asc, name desc;
+    ```
+    - limit, lets us limit the number of rows from a query
+    ```sql
+    select name, salary from person order by salary asc limit 5;
+    ```
+    - group by - group the results by a certain column
+    - having - like "where" but acts on a group of records rather than an an indivual record
+    ```sql
+    select occupation, avg(salary) from person group by occupation having avg(salary) > 500;
+    ```
+    - set operations operate on the results of 2 queries
+        - union - takes everything from either query
+        - intersect - takes records that exist in both queries
+        - union all - takes everything from either query and doesn't remove duplicates
+        - except - takes everything from the first query except the results from the second query
+    ```sql
+    (select * from person where occupation = 'wizard')
+    intersect -- intersect operation takes records that are in both results
+    (select * from person where salary > 500);
+    ```
+    - sub-query  - using a query within another query:
+    ```sql
+    select * from person where salary >
+    (select avg(salary) from person); -- sub-query because it exists within the outer query
+    ```
+    - views - temporary storing of the results from a query:
+    - The views you create should show up under "views" on the left sidebar in DBeaver
+    ```sql
+    create view rich_wizards as
+    select * from person where occupation = 'wizard' and salary >= 1000;
+
+    select * from rich_wizards;
+    ```
+4. Transaction Control Language
+    - transactions - sets of commands in SQL
+5. Data Control Language
+    - controlling who has access to the data
+
+## Joins
+- more on 8/19
+
+
+
+## Functions in SQL
+### Aggregate Functions
+- Act on a group of records
+- Examples
+    - Min
+    - Max
+    - Avg
+    - Sum
+    - Count
+    - First
+    - Last
+
+### Scalar Functions
+- Act on a single record
+- Examples
+    - lower
+    - upper
+    - length
+
+- Some more examples of functions: https://www.geeksforgeeks.org/sql-functions-aggregate-scalar-functions/
 
 ## Truncate vs Delete vs Drop
 - truncate is going to wipe out a table completely
