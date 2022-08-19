@@ -203,13 +203,65 @@
 
     select * from rich_wizards;
     ```
-4. Transaction Control Language
-    - transactions - sets of commands in SQL
+4. Transaction Control Language (TCL)
+    - transaction - sets of (usually DML) commands in SQL
+    - Commands in SQL
+        - Begin - begin/start a transaction
+        - Commit - at the end of our transaction, once we've written our commands, we can commit or persist those changes to the database
+        - Rollback - return to the state before we began the transaction
+        - Save point - set custom save points to return to
+
 5. Data Control Language
     - controlling who has access to the data
+    - mostly useful when we have mulitple users
+    - default username is postgres and the password whatever we set
+        - but we can create other users that have different permissions
+    - Two commands:
+        - grant - give permission to a user certain operations on a table
+        - revoke - remove permissions from a user on a table
+    ```sql
+    revoke insert, update, delete on financial_information from intern;
+    grant select on financial_information to intern;
+    ```
 
 ## Joins
-- more on 8/19
+- a way to combine data from multiple tables
+    - especially useful if we have multiplicity relationships between tables
+### Different Types of Joins:
+1. Inner Join - we only take records that has matches in both tables:
+    - No null values
+```sql
+select person.name, pet.name from person join pet on pet.owner_id = person.id order by person.name;
+```
+2. Left Outer Join - we take all records from the left side, but not everything from the right side
+    - We could have null values in the columns from the right table
+```SQL
+select person.name as person_name, pet.name as pet_name 
+from person left outer join pet 
+on pet.owner_id = person.id 
+order by person.name;
+```
+
+3. Right Outer Join - we take all records from the right side, but not everything from the left side
+    - Now we could have null values in columns from the left table
+```sql
+select person.name as person_name, pet.name as pet_name 
+from person right outer join pet 
+on pet.owner_id = person.id 
+order by person.name;
+```
+
+4. Full Outer Join - we take all records from both tables, and leave null values where there are no matches:
+    - now we can have null values in either table
+```sql
+select person.name as person_name, pet.name as pet_name 
+from person full outer join pet 
+on pet.owner_id = person.id 
+order by person.name;
+```
+- anoter example of full outer join https://www.w3schools.com/sql/sql_join_full.asp
+
+![diagram of joins](https://dq-blog-files.s3.amazonaws.com/joins-tutorial/join_venn_diagram.svg)
 
 
 
