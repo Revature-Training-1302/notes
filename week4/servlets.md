@@ -57,6 +57,8 @@
 - Click "Add New" or the plus button on the top left
 - Find Smart Tomcat in the list of programs
 - Give it a name like "Tomcat Configuration" if we want
+
+![Tomcat Configuration](tomcat_config.png)
 #### Fields
 - Tomcat Server - we want to select the folder where we installed Tomcat
     - should look something like ApaceTomcat/8.5...

@@ -33,3 +33,11 @@ CRUD
 - S stands for secure
 - encryption
 - https://developer.mozilla.org/en-US/docs/Web/Security
+
+### Helpful Links
+- [Overview](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+- [Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
+- [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+- [HTTP Session](https://developer.mozilla.org/en-US/docs/Web/HTTP/Session)
+- [Request Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
+- [Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
