@@ -36,6 +36,9 @@
 - Download under core the zip file and place it in your C drive or anywhere where you can remember where it is
     - Unzip it
 
+
+### Admin Port
+
 ### Next, we create Java web app project
 - Luckily, maven makes this super easy for us:
     - Create a new project, and then select the maven archetype "maven-archetype-webapp"
