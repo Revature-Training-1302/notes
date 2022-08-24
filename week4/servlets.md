@@ -95,3 +95,6 @@
   </servlet-mapping>
   ```
 - In this case, going to localhost:8080/.../first, we should invoke the servlet in the class com.revature.FirstServlet
+
+## Resources
+- https://www.tutorialspoint.com/servlets/servlets_overview.htm

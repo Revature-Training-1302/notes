@@ -41,3 +41,11 @@ CRUD
 - [HTTP Session](https://developer.mozilla.org/en-US/docs/Web/HTTP/Session)
 - [Request Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
 - [Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
+## Postman
+- For now, we've seen GET methods being triggered from our browser
+- But how do we see POST, PUT, DELETE?
+    - One way is that once we build a web page, insert some data, we can specify POST methods
+    - Until then, we can test them out using Postman
+- Postman is a program that lets us enter in endpoints and trigger the different servlets/controllers
+- Go [here](https://www.postman.com/) to download the app. Just pick your operating system
