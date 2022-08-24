@@ -49,3 +49,48 @@ CRUD
     - Until then, we can test them out using Postman
 - Postman is a program that lets us enter in endpoints and trigger the different servlets/controllers
 - Go [here](https://www.postman.com/) to download the app. Just pick your operating system
+- In Postman, we can create collections and store sub-folders or HTTP requests
+- Example: for p1, you can have folders for employees, managers, reimbursements and include the corrsesponding requests in those folders
+- https://www.javatpoint.com/postman-sending-your-first-request
+
+### Request
+- Name: Give it a name that is descriptive
+- HTTP Verb: click the dropdown and choose our corresponding verb (POST, GET, PUT, DELETE)
+- request url, give the address, port number, and the path
+    - example: http://localhost:8080/servlet-1/third
+    - this is what you would type into your browser search bar
+- If we don't have any parameters or data to pass in, we can click send
+    - In the bottom of our screen, we should see the output, a status code
+- Three ways we can pass information in a request:
+    - Request Parameters
+        - ex: http://localhost:8080/servlet-1/third?name=rory&color=blue
+        - we add the ? at the end of our path to indicate that we want to add some parameters
+        - we have "key=value" syntax
+        - separate key-value pairs with &
+    - Body
+        - not in the address that we type in, so that way it is more secure (it's not exposed in the path)
+        - the format of the body is JSON
+        - click on body -> raw -> select JSON from the drop down
+        - fill in data about the body
+    - Path pattern http://localhost:8080/servlet-1/third/1
+        - we usually use this request to pass in an id
+        - it's similar to the path parameters but we don't use key-values
+        - it's just a single value
+
+### JSON
+- JavaScript Object Notation
+- it's a way to store data using key value 
+```json
+pet: {
+    name: ashes,
+    food: [
+        tuna,
+        meow mix
+    ],
+    species: cat,
+    owner: {
+        name: rory,
+        state: virginia,
+    }
+}
+```
