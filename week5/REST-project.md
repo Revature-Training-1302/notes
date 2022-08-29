@@ -1,0 +1,13 @@
+## Entities
+- Tickets
+    - Servlet
+        - GET - return tickets, not anything else
+        - POST - inserting a ticket, not inserting an employee
+        - PUT - updating a ticket
+        - DELETE - deleting a ticket
+- Employees
+    - Servlet
+        - GET - get employees
+        - POST - inserting employee
+        - PUT - update employee
+        - DELETE - deleting employee
