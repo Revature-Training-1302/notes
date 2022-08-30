@@ -1,0 +1,43 @@
+## Collections
+- A collection of data
+- We've seen a few members of the Collections framework
+    - ArrayList class
+    - List interface
+- Iterable - parent of the collection hierarchy
+    - iterable means we can iterate through the different members
+- List
+    - https://docs.oracle.com/javase/8/docs/api/java/util/List.html
+    - We've seen lists being used to store different values
+    - Dynamically sized, we can add elements after it's created
+    - We can give it a type to indicate what classes can be in the list
+        - ex: List<Pet> pets
+    - There are a few different implementations of the list
+    - Unordered
+    - Allows Duplicate elements
+    - Some methods
+        - add
+        - get
+        - clear
+        - remove
+    - Classes that implement List
+        - ArrayList
+        - Vector
+        - LinkedList
+- Queue
+    - https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html
+    - Usually First in First Out
+    - Methods
+        - Throw Exception if fails:
+            - add - insert an element into the queue
+            - remove - retrieves and removes the head of the queue
+            - element - return the head without removing it
+        - Return special value (null or false) if fails
+            - offer - insert an element into the queue
+            - poll - remove the head, return null if empty
+            - peek - return the head, return null if empty
+- Set
+    - https://docs.oracle.com/javase/8/docs/api/java/util/Set.html
+    - No duplicate elements
+    - Don't have a get method like list but we can use an iterator to loop through the elements in the set
+    - add, remove, clear
+- ![Diagram of Collections](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200811210521/Collection-Framework-1.png)
