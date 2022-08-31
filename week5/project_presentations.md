@@ -1,0 +1,14 @@
+- Business Professional Attire
+- Talk briefly about technologies (no more than 30 seconds)
+- Architecture Diagram - overview of layers of your project (services, daos, servlets)
+- ERD diagram - you can generate this easily on DBeaver, right-click on "tables" on the left side panel and "View Diagram"
+- Walk through the Postman requests (3 - 4 minutes)
+    - During this, you've going to cover the features implemented
+    - Outstanding issues, make sure to note if anything isn't working or needs to be finished up
+- The end is usually a good time to summarize your process and talk about major challenges and how you fixed them (30 seconds to a minute)
+- The entire presentation should take 5 minutes
+    - I will give a soft warning at 5 minutes
+    - At 7 minutes, we will do a hard cut-off
+- Definitely practice talking about the project and the requests/features as you walk through it
+- Make sure the code is working before-hand
+- Don't be nervous, by the time you're presenting, the hard part is over. You've already made the project so you just have to talk about it

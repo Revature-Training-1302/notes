@@ -6,4 +6,5 @@
 ```java
 class CustomList <T> {
     // anywhere we see the T, it's going to reger to that type that we assigned
+    
 }
