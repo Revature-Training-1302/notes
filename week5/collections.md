@@ -30,7 +30,19 @@
             - The start of the list is the head node which points to the 2nd node and so on...
             - ![Diagram of Linked List](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)
         - Vector
-        - LinkedList
+            - Vector is like the ArrayList but it is synchronized, thread-safe
+            - https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html
+            - https://www.geeksforgeeks.org/vector-vs-arraylist-java/
+        - Stack
+            - extends the vector class
+            - Unlike a queue, which is FIFO (First in First Out), the stack is LIFO (Last in First Out)
+            - Like a stack of pancakes, if you add a pancake to the stack, you wouldn't take one from the bottom, you would take the last one that was place on top
+            - Methods
+                - empty - check if the stack is empty
+                - pop - remove the item on the top of the stack
+                - peek - look at but don't remove the top item
+                - search - returns the position on the stack
+                - push - push an item onto the stack
 - Queue
     - https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html
     - Usually First in First Out
@@ -127,3 +139,5 @@
 - A class that implements the comparator interface, its only purpose is to compare 2 members of (usually) a different class (like a Movie class)
     - We would have a Movie class as well as a totally separate MovieCompare class
 - compare method takes in 2 objects and compares them
+
+
