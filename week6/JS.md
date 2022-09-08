@@ -80,6 +80,7 @@
     - rest - take N parameters in the function, storing them as an array in the function body
         - rest argument should be the last, can only have 1
 - Template Literals - inject values into a string, with very simple syntax
+- we use backticks (`) to indicate a template literal, we can also use back-ticks when we need a quotation mark in the string that we're creating
 ```js
 let id = 13;
 console.log(`localhost:8080/pets/${id}`);`
