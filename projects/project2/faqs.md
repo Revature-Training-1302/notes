@@ -16,3 +16,32 @@
 8. Delete the feature branch from remote repo.
 9. On local computer, checkout development and branch again. (You don't want to branch from the now-deleted feature branch). 
 10. When you have a stable project, you can merge to main and then work work in increments and merge to main whenever you reach another milestone.
+
+- Project Timeline
+    - Presentations will be on Friday September 30th
+    - Week "0" (9/6-9/9)
+        - Form Teams
+        - Come up with Team Names
+        - Understand the project requirements
+        - Working on User Stories
+        - Start to think about entities, come up with a theme for the website
+    - Week 1 (9/12-9/16)
+        - In class, learning Spring
+            - For your project you'll be working with Spring Boot
+                - Framework that will speed up our back-end development
+                - Hoping to get the Spring Demo done by Thursday with the Pet demo
+                - Package structure should be familiar
+        - Coming up with entities
+        - Thinking about relationships
+        - Hope to learn about AWS RDS, Codebuild, Elastic Beanstalk
+    - Week 2 (9/19 - 9/23)
+        - In class, learning Angular
+            - Angular is the framework that you will use for front-end
+            - Hoping to have a good demo completed by Thursday
+        - Until we fully learn Angular, you can finish up Spring Boot part of the application
+        - Hope to learn about deploying Angular website on AWS
+    - Week 3 (9/26 - 9/30)
+        - In class, learning cloud and AWS
+        - AWS is how we host our project online
+        - I'm hoping to sprinkle in some of those demos in the earlier weeks
+        - Present on Friday this week
