@@ -121,3 +121,21 @@ font-size: 20px;
 #### Bootstrap Grid System
 - 12-based system
 - rows and columns
+
+
+### CSS Variables:
+```css
+/* Define variables here: */
+:root{
+    /* imagine we're reusing this color throughout our project */
+    --main-header-color: #67806e;
+}
+
+.header1 {
+    color: var(--main-header-color);
+}
+
+.header2 {
+    color: var(--main-header-color);
+}
+```

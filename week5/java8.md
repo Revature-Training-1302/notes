@@ -32,4 +32,14 @@
         - BiPredicate takes in 2 values
         - BiFunction takes in 2 values
 ### Streams
-- More Coming Soon
+- A way to process collections of objects in Java
+- Intermediate Operations (similar to JS array methods)
+    - map - apply some function to every element in the collection
+        - return a value
+    - filter - filter out the elements based on some condition
+    - sorted - sort the elements
+- Terminal Operations
+    - collect - take in all of the return values and return it to some Collection object
+    - forEach - apply some function/operation to each returned object
+        - perform some operation
+    - reduce - reduce all of the elements of the stream to a single value

@@ -106,3 +106,17 @@
 - If we add the "required" attribute to any of our inputs, we will need a value in order to submit the form, otherwise, we'll get the message that the field is required (form validation)
 - We can use the names as keys and values as values
     - <input name = "username" value = "admin"> means that for the field "username" the value is "admin"
+
+
+### Semantic Tags
+- Introduced in HTML 5
+- They're used to organize your web pages
+- Normally on a web page, we have a header, footer, navbar, side panel, main content, etc.
+- Semantic Tags:
+    - header
+    - footer
+    - aside
+    - article
+    - section
+    - nav
+- https://www.w3schools.com/html/html5_semantic_elements.asp 
