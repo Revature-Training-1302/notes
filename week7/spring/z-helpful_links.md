@@ -1,0 +1,4 @@
+- [Introduction to Spring](https://docs.spring.io/spring-framework/docs/3.0.x/spring-framework-reference/html/overview.html)
+- [IOC Container](https://www.youtube.com/watch?v=SzMERP1xz8U)
+- [Bean Scopes](https://www.geeksforgeeks.org/singleton-and-prototype-bean-scopes-in-java-spring/#:~:text=Prototype%20Scope%3A&text=A%20request%20can%20be%20made,used%20for%20the%20stateless%20beans)
+- [XML Configuration](https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/xsd-configuration.html)
