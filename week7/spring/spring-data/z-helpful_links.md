@@ -1,0 +1,4 @@
+- [Spring Data Derived Query Methods](https://www.baeldung.com/spring-data-derived-queries)
+- [More on Spring Derviced Query Methods](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#appendix.query.method.subject)
+- [Integration Testing](https://www.javatpoint.com/integration-testing)
+- [Spring Mock MVC Guide](https://spring.io/guides/gs/testing-web/)

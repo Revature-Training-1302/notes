@@ -1,0 +1,99 @@
+// Spring Boot - Quiz Questions
+// Best Choice - 9 
+// T/F - 1
+// Total - 10
+
+//GUID: 45fcfa1c-d14a-4d38-9f87-5c904f8db38b
+::Spring Boot::
+The <code>@RequestMapping</code> annotation is used to
+{
+=Provide a URL mapping to a resource for any HTTP method.
+~Provide a URL mapping to a resource for only GET methods.
+~Map a path variable to an array index.
+~Provide data contained in a request body as a HashMap.
+}
+
+//GUID: b5ce3386-d039-43a8-8ee0-887bea302c06
+::Spring Boot::
+The <code>@RequestBody</code> annotation is used to
+{
+~Define a class as a controller.
+~Define that the return value of a method should be serialized to some form such as XML, JSON, ect.
+=Define that the request body should be deserialized to a Java object from form such as XML, JSON, ect.
+~Parse the a variable in the requested URL and injected to the method call as a parameter.
+}
+
+//GUID: c69450a2-edcd-470d-a70b-a6bc9c0694b3
+::Spring Boot::
+The <code>@PathVariable</code> annotation is used to
+{
+~Define a class as a controller.
+~Define that the return value of a method should be serialized to some form such as XML, JSON, ect.
+~Define that the request body should be deserialized to a Java object from form such as XML, JSON, ect.
+=Parse the a variable in the requested URL and injected to the method call as a parameter.
+}
+
+//GUID: af82ed1d-4a91-4829-af8c-c68e0286501c
+::Spring Boot::
+When used on the class, the <code>@RestController</code> annotation implies what on all methods?
+{
+=<code>@ResponseBody</code>
+~<code>@RequestBody</code>
+~<code>@RequestMapping</code>
+~<code>@RequestParam</code>
+}
+
+//GUID: 8ba62191-279b-4e51-a50e-70afb3d4c622
+::Spring Boot::
+Configuring a method to handle an HTTP PUT request:
+{
+~<code>@PutRequest</code>
+~<code>@Put</code>
+=<code>@PutMapping</code>
+~<code>@RequestMapping("PUT")</code>
+}
+
+//GUID: 7ab1e321-2c89-4be4-98d9-94975903f4c2
+::Spring Boot::
+Spring boot features an 'opinionated configuration' which means that:
+{
+~It requires you to tell it how to configure all functionality.
+=When not provided with configuration, it uses reasonable default configurations.
+~It cannot be configured.
+~You will never need to configure it.
+}
+
+//GUID: eb0938d1-143b-464b-bf27-fa18774d3a02
+::Spring Boot::
+When using spring boot, you must deploy your application to a Tomcat server.
+{ F }
+
+//GUID: 440dff07-391b-47d5-9bef-f5f43593e8a0
+::Spring Boot::
+Configuration can be provided to spring using which files?
+{
+~application.xml and application.yml
+~application.properties and application.xml
+~application.xml and bootstrap.xml
+=application.yml and application.properties
+}
+
+//GUID: a29aec53-791f-42d6-a2ab-89bf58dfc58c
+::Spring Boot::
+Using the default configuration, Spring boot includes an embedded ________.
+{
+=tomcat server
+~postgres server
+~in memory database
+~user
+}
+
+//GUID: 9437c0bc-5930-41da-b8fc-74ac6c0ddb8e
+::Spring Boot::
+Spring boot actuators can be used to
+{
+~interact with your server using a convenient GUI.
+~open a running application on the command line.
+=get runtime information about the application via HTTP.
+~start a server when it is not running.
+}

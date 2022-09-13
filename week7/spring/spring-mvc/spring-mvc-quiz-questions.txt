@@ -1,0 +1,152 @@
+// Spring MVC - Quiz Questions
+// Best Choice - 16
+// Total - 16
+
+//GUID: a00e269c-d393-43c4-841c-1fc0ca189925
+::Spring MVC::
+Which of the following is not a kind of Spring MVC mapping?
+{
+~<code>@GetMapping</code>
+~<code>@DeleteMapping</code>
+=<code>@CreateMapping</code>
+~<code>@RequestMapping</code>
+}
+
+//GUID: 635f4687-fdd5-4cff-bf0a-e1115144ca9a
+::MVC Exception Handling::
+The <code>@ExceptionHandler</code> can be used to configure a method to:
+{
+~Handle a given kind of exception if that exception is thrown on the method @ExceptionHandler is listed above.
+~Provide a handler for a given exception, but only if it is thrown by code in the controller itself.
+=Provide a handler for a given exception, provided it is thrown by the controller or any functionality called by the controller.
+~Globally handle any exception.
+}
+
+//GUID: 5ffb2c3a-2ba0-4521-bf7f-018ee1febfb8
+::Accessing URL data::
+Given the following annotation: <code>@GetMapping("/{id}")</code> 
+{
+~<code>public Object getById(@PathParam(name="id") int value) {}</code>
+~<code>public Object getById(@RequestBody int id) {};</code>
+~<code>public Object getById(@RequestMapping int id) {}</code>
+=<code>public Object getById(@PathVariable int id) {}</code>
+}
+
+//GUID: 83fcc25d-a2b2-44ec-a412-931d7149c33e
+::Spring MVC::
+How do you turn ON annotation support in Spring MVC?{
+	=mvc annotation-driven
+	~mvc annotation-config
+	~context annotation-config
+	~beans annotation-driven
+}
+
+//GUID: a0762adf-3878-4067-9953-e0288192a64d
+::Spring MVC::
+How do you turn ON annotation-based autowiring in Spring?{
+	~mvc annotation-driven
+	~context annotation-driven
+	=context annotation-config
+	~beans annotation-driven
+}
+
+//GUID: d23c555-b02c-49c7-8a66-86369795fffd
+::Spring MVC::
+Select the core component of the Spring MVC module.{
+	=DispatcherServlet
+	~ActionServlet
+	~Faces-Servlet
+	~FrontControllerServlet
+}
+
+//GUID: 56522887-5773-415a-8cd1-ca3ff2261172
+::Spring MVC::
+Select the correct stereotype annotation{
+	~<code>@Component</code>
+	~<code>@Repository</code>
+	~<code>@Service</code>
+	~<code>@Controller</code>
+	=All of them
+}
+
+//GUID: ec1d3e1c-7c75-4e3c-9a43-b420907494c3
+::Spring MVC::
+Select the incorrect annotation from the list.{
+	~<code>@Transactional</code>
+	~<code>@Component</code>
+	~<code>@Autowired</code>
+	~<code>@Controller</code>
+	=<code>@Dao</code>
+}
+
+//GUID: ce9a362b-7613-46b2-b2ad-4943381552c4
+::Spring MVC::
+The ____ takes the request and calls the appropriate service methods based on used GET or POST method.{nnm
+	~ViewResolver
+	~DispatcherServlet
+	=Controller
+}
+
+//GUID: 0b908d10-7b48-4587-a23c-5770758ea766
+::Spring MVC::
+The DispatcherServlet will take help from _____ to pickup the defined view for the request{
+	~HandlerMapping
+	=ViewResolver
+	~DispatcherServlet
+	~Controller
+}
+
+//GUID: c8f8987a-39ea-4512-8640-802ca0bf7cf8
+::Spring MVC::
+The Spring MVC DispatcherServlet consults the ____ to call the appropriate Controller.{
+	=HandlerMapping
+	~ViewResolver
+	~DispatcherServlet
+	~Controller
+}
+
+//GUID: 4f232cdc-0d72-4823-bcd7-b210d52983f2
+::Spring MVC::
+The Spring Web MVC framework is designed around a _____ that handles all the HTTP requests and responses{
+	~HandlerMapping
+	~ViewResolver
+	=DispatcherServlet
+	~Controller
+}
+
+//GUID: 8caf532b-4ab4-47fa-852b-5b4c78003cc6
+::Spring MVC::
+This annotation identifies the method as a request handler type for a given path.{
+	~<code>@Controller</code>
+	~<code>@Handler</code>
+	=<code>@RequestMapping</code>
+	~<code>@Path</code>
+}
+
+//GUID: f39232ed-65a0-4e07-b0c1-d04d69debcaa
+::Spring MVC::
+The _____ annotation registers the class as a controller and must be used in conjunction with <code><context: component-scan></code> tag in the XML to automatically discover and register the controllers as Spring beans.{
+	=<code>@Controller</code>
+	~<code>@Handler</code>
+	~<code>@RequestMapping</code>
+	~<code>@Path</code>
+}
+
+//GUID: 122d8d75-2a0b-4d03-853c-7aeb8019a925
+::Spring MVC::
+What is Spring MVC?>{
+	=A fully featured MVC framework that is a module of Spring.
+	~A module that provides for integration with Struts.
+	~Required for DI (Dependency Injection).
+	~Allows for component scanning through the component-scan tag in the applicationContext.xml.
+}
+
+//GUID: b6cff273-5a62-4ee5-a0b8-124a24bf5ff4
+::Spring MVC::
+Which is not a component of Spring MVC?{
+	~HandlerMapping
+	~ViewResolver
+	~DispatcherServlet
+	=RequestProcessor
+}
+

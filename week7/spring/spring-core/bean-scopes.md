@@ -9,8 +9,8 @@ This page details "out-of-the-box" as well as custom Scopes for Spring beans.
 Bean configuration files act similarly to the creation of a class file, in that it is a template which can be used to instantiate objects (in this case, Spring uses this configuration to create bean objects). This configuration also extends to the defined scope of those objects. As a reminder, a scope can be seen as a sub-section of a larger application, with certain defined values, properties and objects. When defining a bean in the configuration, you have the ability to define the scope as well. For XML configurations, use the scope attribute on the bean element. Otherwise you can use the `@Scope` annotation to override the default (Singleton) scope for configured beans.
 
 With regard to Spring Beans, there are six scopes, four of which can only be by access when utilizing a web aware ApplicationContext. They are:
-1. Singleton Scope (default) - Each bean definition is scoped to a single object instance per Spring IoC Container.
-1. Prototype Scope - A single bean definition is scoped to a number of object instances.
+1. Singleton Scope (default) - Each bean definition is scoped to a single object instance per Spring IoC Container. Good for objects that don't have individual states (service)
+1. Prototype Scope - A single bean definition is scoped to a number of object instances. Good for stateful objects (Pokemon, User, etc.)
 1. Request Scope [Only valid with a web-aware ApplicationContext] - A single bean definition is scoped to the lifecycle of a single HTTP request. This means the HTTP request has its own instance of a bean created from a single bean definition.
 1. Session Scope [Only valid with a web-aware ApplicationContext] - A single bean definition is scoped to the lifecycle of an HTTP Session.
 1. Gloabl Session Scope [Only valid with a web-aware ApplicationContext] - A single bean definition is scoped to the lifecycle of a global HTTP session. Generally only valid when used in a portlet context.

@@ -1,0 +1,60 @@
+// Spring Data - Quiz Questions
+// Best Choice - 5
+// T/F - 1
+// Total - 6
+
+//GUID: 02df36b4-6410-4a7c-9099-5dffeaa2267a
+::Spring Data::	
+Spring Data requires some underlying ORM technology like Hibernate.
+{ T }
+
+//GUID: 903e152d-05cd-478d-9313-e145cd8d5589
+::Spring Data::
+Which is not a part of the class/interface hierarchy of Spring Data.
+{
+~Repository
+~CrudRepository
+=SQLRepository
+~PagingAndSortingRepository
+~JpaRepository
+}
+
+//GUID:
+::Spring Data::
+Spring Data's JpaRepository features a fluent API which allows it to
+{
+~Generate Procedural Language functions on the database.
+~Know whether data exists without checking the database.
+~Provide an in-memory database that doesn't require a separate database.
+=Generate SQL queries by parsing an abstract method's name.
+}
+
+//GUID:
+::Spring Data::
+The <code>@Transactional</code> annotation is used to
+{
+=Define that the underlying code should be executed as a database transaction.
+~Define that the underlying code is used to make a purchase.
+~Define that the underlying code should never throw an exception.
+~Does nothing.
+}
+
+//GUID:
+::Spring Data::
+Which best describes the transaction propagation level REQUIRED
+{
+=The method will utilize an existing transaction or start one if none exists.
+~The method will throw an exception if a transaction is not already ongoing.
+~The method will pause any ongoing transaction.
+~The method will create a new transaction even if one is already ongoing.
+}
+
+//GUID:
+::Spring Data::	
+Which best describes the transaction propagation level NOT_SUPPORTED
+{
+~The method will utilize an existing transaction or start one if none exists.
+~The method will throw an exception if a transaction is not already ongoing.
+=The method will always run non-transactional.
+~The method will create a new transaction even if one is already ongoing.
+}
