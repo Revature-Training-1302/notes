@@ -18,6 +18,8 @@ When using `Spring` and `Spring ORM` or `Spring Data` your chosen ORM can be con
 
 For best practice usage `@Transactional` should be used on your `@Service` beans since a transaction is a unit of work with its success or failure directly tied to the requirements of the application and not necessrarily to the model. The side-effects of a transaction can be assumed to be either `commit` or `rollback` therefore the model will be consistent, but the `@Service` will be required to react accordingly.
 
+Isolation Levels: https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/ 
+
 Below is a list of the attributes for `@Transactional`
 
 | Attribute              | Purpose                                                                                                                                                                 |

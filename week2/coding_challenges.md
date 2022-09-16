@@ -11,6 +11,9 @@
     - what is the input
     - what is the output
     - general steps of how we could get from input to output
+- Understand the pre-written code:
+    - Usually the pre-written code parses the input for you
+    - Only spend writing code isn't already provided for you
 - Read in the input and print it out
     - On CodingGame, the input is usually read in for us
     - But printing it out helps me visualize our puzzle pieces

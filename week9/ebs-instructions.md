@@ -30,7 +30,7 @@ artifacts:
     - ROOT.jar
     - .ebextensions/**/*
 ```
-- Note: "pet-0.0.1-SNAPSHOT.jar" should be whatever is output from a Maven build. You can verify this by running a maven build command on your local computer and examining the target folder for the output.
+- Note: "pet-0.0.1-SNAPSHOT.jar" should be whatever is output from a Maven package. You can verify this by running a maven package command on your local computer and examining the target folder for the output.
 3. Upload your project to a repository. Make sure the root of the project is the root of the repository. 
 
 ## Create an S3 Bucket
@@ -80,5 +80,19 @@ artifacts:
   - Make sure RDS is up and running
   - To restart the environment, click on Actions and then Restart App Server
   - To rebuild the application (like if you made changes to the source code), click on Actions and then Rebuild Environment
+  - Make sure to set port number to 5000
 
   ## Create a Code Pipeline
+  1. Navigate to AWS Code Pipeline
+  2. Click "Create Pipeline"
+  3. For source, click Github version 2
+  4. Create a connection to your Github account
+    - Give a connection name
+    - Click Install new app
+    - Choose your account, or whatever org your repo is attached to
+  5. Enter the repository name
+  6. Under branch, select main
+  7. Keep CodePipeline default
+  8. For Build Provider, select AWS CodeBuild and select the code build that we set up
+  9. For deploy, select Elastic Beanstalk
+  10. Pick the Elastic Beanstalk that we set up

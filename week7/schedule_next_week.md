@@ -1,0 +1,12 @@
+## Next Week
+- QC (JS and Spring topics) Monday 11:30 EST to 1:00 EST
+    - Make sure to look at [study guide](study-guide.md).
+    - Let me know if there are any questions/clarifications!
+    - Use [baeldung](https://www.baeldung.com/), [spring docs](https://docs.spring.io/spring-framework/docs/current/reference/html/), [geeksforgeeks](https://www.geeksforgeeks.org/), to help study
+- Project Check-ins Monday afternoon
+    - I will ask questions and examine progress
+    - Try to have back-end completed by then
+- Spring Quiz on Tuesday afternoon
+- Learning Angular
+    - By end of week, we will build a full front-end and deploy
+    - Full-stack application is almost complete!
