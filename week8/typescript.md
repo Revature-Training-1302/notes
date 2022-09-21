@@ -59,3 +59,11 @@ let p1:PersonI = {
     - readonly - used for class fields, makes the fields immutable (like final in Java)
         - Unlike const, we use readonly for class fields
 
+### Obervables
+- pass messages/data around our program
+- asynchronous programming
+- Publisher/Subscribe design pattern
+- When we return an observable, the received has to subscribe to that data in order to see it/use it
+- Observables are similar to promises but observables can emit multiple values, whereas promises return a single response
+- By default, when we call HTTP requests from Angular, those will return observables
+- We can simulate HTTP requests using the "of" method

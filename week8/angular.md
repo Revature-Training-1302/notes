@@ -77,6 +77,7 @@
 - ngOnInit() - run whenever we initialize the component, we usually set up different properties
 - ngOnDestroy() - invoked when component is destroyed
 - constructor - dependency injection
+- https://angular.io/guide/lifecycle-hooks
 
 ### App Module File
 - @NgModule - takes some metadata to launch the app:
@@ -114,6 +115,14 @@
 
 #### ngFor
 - repeat the same element for items in an array
+
+### Services
+- Just like components, we can create services in Angular
+- ng generate service <service-name>
+- contain business logic, make http requests to the back-end
+- We can achieve dependency injection by placing the service class in the constructor of our component
+    - This will allow us to use those methods within our component
+
 
 
 
