@@ -123,7 +123,12 @@
 - We can achieve dependency injection by placing the service class in the constructor of our component
     - This will allow us to use those methods within our component
 
-
-
+### Routing
+- Setting up our application so that a particular route in the address bar will route us to a particular component
+    - ex: localhost:4200/pets -> that would show us all pets:
+    - ex: localhost:4200/pet/3 -> pet with id 3
+    - ex: localhost:4200/instructions -> show us the instructions:
+- Define our routes in app.module.ts
+    - an array that maps path to a component
 
 
