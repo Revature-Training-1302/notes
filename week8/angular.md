@@ -52,6 +52,8 @@
         - 
 - Outside of the src folder:
     - package.json - tell us which packages/dependencies we've installed
+        - Our package.json tells node which packages to install when we do npm install
+        - But, if we're starting a new project, we'll need to manually install some packages (http, FormsModule)
     - .gitignore, very important because the node modules are very big so we wouldn't want to push those to a repo
     - node modules - a large amount of folders that contain the dependencies that our project uses
     - ReadMe - contains information about our pet application
@@ -131,4 +133,12 @@
 - Define our routes in app.module.ts
     - an array that maps path to a component
 
+### HTTP Client
+- In our service, we use the HTTPClient to send requests (POST, PUT, GET, DELETE, PATCH)
+- These functions return observables
+- We have to import the HTTPClient in our imports array
+- ```npm install http```
 
+### CORS
+- Access to XMLHttpRequest at 'http://localhost:8080/pets' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+- To fix this, on our controller, we add an annotation to allow 
