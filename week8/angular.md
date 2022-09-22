@@ -142,3 +142,7 @@
 ### CORS
 - Access to XMLHttpRequest at 'http://localhost:8080/pets' from origin 'http://localhost:4200' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
 - To fix this, on our controller, we add an annotation to allow 
+
+### Pipes
+- A way to transform data
+- https://angular.io/guide/pipes
