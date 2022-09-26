@@ -118,6 +118,10 @@
 #### ngFor
 - repeat the same element for items in an array
 
+### Attribute Directives
+- ngClass - used to dynamically set the class of an element, based on some expression
+- ngStyle - used to dynamically set the style of an element
+
 ### Services
 - Just like components, we can create services in Angular
 - ng generate service <service-name>
@@ -146,3 +150,22 @@
 ### Pipes
 - A way to transform data
 - https://angular.io/guide/pipes
+- Make your own pipe
+    - ng generate pipe pipe-name
+    - fill out the tranform function to return a modified value
+    - set the name of the pipe using the Pipe decorator
+
+### Webpack
+- Have a lot of script files in our project
+- Loading these files separately is inefficient
+- We use Webpack to bundle a group of JS modules and merge them into a single file which can then be loaded by the browser
+- packages all modules in our application and serves it to the browser
+
+### Event Emitters
+- Passing events/data between components
+- We've seen data/events passed aroung using services
+- We also have access to 2 decorators that allow us to pass data/events around
+    - @Input - specify what data we're taking in, use property binding to pass in some data from parent to child
+    - @Output - specify what data we're sending out or what event we're emitting, use event binding to pass a callback function in to deal with the event that we're emitting
+
+
