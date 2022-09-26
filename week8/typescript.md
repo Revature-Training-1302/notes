@@ -77,7 +77,7 @@ let p1:PersonI = {
 - Three Variants
     - Behavior Subject - store the current data of any observer declared before it
     - Replay Subject - provides a option to choose how many values we want to emit from the last observer. This subject stores and then passes the last specificed option values to the new observer
-    - Async Subject - emit the last value to observers when the sequence is completed:
+    - Async Subject - emit the last value to observers when the sequence is completed, nothing willhappen if we don't call subject.complete();
 
 ### Decorators
 - Syntacically similar to annotations in Java

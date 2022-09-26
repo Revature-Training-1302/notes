@@ -137,6 +137,17 @@
 - Define our routes in app.module.ts
     - an array that maps path to a component
 
+#### Router Guards
+- controlling who has access to certain pages
+- Four different interfaces:
+    - CanActivate - decides if a route can be activated
+        - for example, make sure user is logged in before they can view adopted pets
+    - CanActivateChild - decides if children of a route can be activated
+    - CanLoad - decides if a route can be loaded
+    - CanDeactivate - decides if user can leave a route
+- ng generate guard auth
+- https://stackoverflow.com/questions/42026045/difference-between-angulars-canload-and-canactivate
+
 ### HTTP Client
 - In our service, we use the HTTPClient to send requests (POST, PUT, GET, DELETE, PATCH)
 - These functions return observables
@@ -167,5 +178,16 @@
 - We also have access to 2 decorators that allow us to pass data/events around
     - @Input - specify what data we're taking in, use property binding to pass in some data from parent to child
     - @Output - specify what data we're sending out or what event we're emitting, use event binding to pass a callback function in to deal with the event that we're emitting
+
+### Testing
+
+#### Jasmine
+- Testing framework
+    - Comes with methods that we write the tests in
+    - Write our Jasmine tests in the spec.ts files in our Angular project
+
+#### Karma
+- Take our tests and run them on the browser
+    - Gives us feedback on the tests
 
 
