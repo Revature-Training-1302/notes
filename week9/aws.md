@@ -1,18 +1,74 @@
 ## AWS - Amazon Web Services
 - Offer a bunch of online services that let us perform certain actions on the cloud
+- Pay-As-You-Go
+    - Offer services at affordable prices, no upfront costs of setting up data centers
+    - Don't have to guess/predict capacity
+        - A lot of AWS services are scalable, meaning that will go up/down in size as needed
+    - Increased set-up speed
+        - Deploy back-end in a minutes
+        - Normally, this would take weeks to set up
+    - Eliminate over-head costs of maintaining data centers
+    - Benefit from massic economies of scale
+        - because so many people use AWS services, the price is more convenitent for users
+- Similar to Azure which is Microsoft's cloud service
+
+## AWS Regions
+- A region is part of the world (US East, US West, US Central, Europe, Asia)
+- Within regions are multiple availability zones
+    - AZ - Availability Zone
+    - AZs are isolated from each other in the same region
+    - So, if one AZ was taken down by natural disaster or some other big phenomenon, the other AZ would still be operational, so people's services wouldn't be messed up
+    - Redundancy - data could be stored in multiple AZs so if one was destroyed, the data wouldn't be lost
+    
 
 ### IAM - Identiy Access Management
 - Create roles on our account so one person can't control everything
 - The root user is the account owner and can assign roles to different users
 
+### EC2 - Elastic Compute Cloud
+- provides secure, resizable compute capacity in the cloud
+- makes web-scale cloud computing easier
+- We can create virtual computing environments (instances)
+- Configure CPU, memory, storage, networking capacity
+- Secure connections to EC2
+- AMI - Amazon Machine Images - template for instances (ex: what operating system we choose)
+- Elastic - meaning that we can respond to the traffic flow and scale up/down depending
+
+#### EC2 Auto-Scaling
+- Improve fault tolerance - terminatig faulty EC2 instances and replacing them
+- Increase availability - predictive scaling, making sure that the instance is available to consumers
+- Lower cost - scaling down if we don't need a high performance for lower traffic times
+- Groups - collection of EC2 instances with similar characteristics
+    - we maintain a fixed number of instances even if one of the instance becomes unhealthy
+    - increase the number of instances if we're expecting a lot of traffic
+    - decrease the number if traffic is expected to go down
+
+### Security Groups
+- Act as a virtual firewall for EC2 instances
+    - control incoming and outgoing traffic based on ip address
+    - based on protocols/port numbers
+    - ex: allow traffic from our own ip address, port 5432 for postgres
+- stateful -
+    - if we send request from an instance, the reponse will be allowed to flow in regardless of inbound rules
+    - if we're sending a response from a request to the instnace, we will be allowed to send that response regardless of outbound rules
+
 ### RDS - Relational Database Service
 - Instead of running a database server locally, we'll have it hosted on the web
 - We'll be able to connect to it from anywhere (as long as we set up the right permissions)
+- We can configure storage type, CPU, networking capacity
+- When we make RDS, make sure to choose free tier
 
 ### S3 - Simple Storage Service
 - Host files online
+- We can S3 buckets to store any type of file (html, text, pdfs, videos, images, zip files)
+- More unstructured than RDS
 - Like an online drive
 - Specifically, we'll use S3 to host the build of our back-end and front-ends so they can be deployed
+- When we build our front-end, we will host the html page on S3 (Static Website Hosting)
+    - Our website still has functionality, but we won't set up a pipeline like we did with the back-end
+    - Looks at our static index file and deploys that
+- Each item in our bucket has a url that we can use to access the item in the bucket
+    - We'll have to specify whether it's public or not (default to private)
 
 ### Code Build
 - Given some sort of code source (Github), Code Build is going to build our project for us based on some commands we give it

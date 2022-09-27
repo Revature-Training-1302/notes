@@ -185,6 +185,14 @@
 - Testing framework
     - Comes with methods that we write the tests in
     - Write our Jasmine tests in the spec.ts files in our Angular project
+- Features to test
+    - Making sure that content is being displayed on the page
+    - Making sure that our data is being initialized properly
+    - Make sure that when we perform some action on the page, the proper function is being called
+    - Test out our 2-way binding, make sure that when we fill out input fields in a form, the data is being updated
+    - Test to make sure data from our route is being properly parsed/gathered
+    - Make sure that data from our services is being retrieved correctly
+        - For this, we make a mock service
 
 #### Karma
 - Take our tests and run them on the browser
