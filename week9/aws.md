@@ -78,6 +78,8 @@
 
 ### Elastic Beanstalk
 - The environment that we will run the project on
+- The EBS will implicitly create an EC2 instance
+- To shut this down and prevent charges (after 750 hours), you must termine EBS (Not the EC2)
 
 ### Our Spring Boot Project
 1. We'll set up an RDS on AWS and put the credentials in our .properties file. Then, when we run the program, all changes made to the database will affect RDS database rather than our local/H2. 
