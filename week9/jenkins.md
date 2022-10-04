@@ -1,5 +1,5 @@
 ## Jenkins
-- Jenkins - self-container, automation server
+- Jenkins - self-contained, automation server
     - automate building, testing, deployment of software
 - Project/Job - a repeatable set of steps that automate a task
     - Jobs can be triggered manually, externally, or by another job
